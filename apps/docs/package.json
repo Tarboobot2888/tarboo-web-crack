@@ -1,20 +1,13 @@
 {
   "name": "docs",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vitepress dev src",
-    "build": "vitepress build src",
-    "preview": "vitepress preview",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,md}\"",
-    "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
-    "typecheck": "tsc --noEmit"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
-  "devDependencies": {
-    "@webcrack/eslint-config": "workspace:*",
-    "@webcrack/typescript-config": "workspace:*",
-    "typescript": "^5.8.2",
-    "vitepress": "1.6.3"
-  }
+  "dependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "packageManager": "pnpm@9.12.2"
 }

@@ -57,6 +57,17 @@ console.log(result.bundle);
 await result.save('output-dir');
 ```
 
+## Web Interface
+The new web interface provides several pages:
+- **Splash**: introduction screen with logo and enter button.
+- **Home**: code editor to paste obfuscated code and view the deobfuscated result.
+- **About**: short info about the developer.
+- **Contact**: email link for feedback.
+- **History**: shows your last ten inputs stored locally.
+- **Privacy**: brief policy statement.
+
+Run `pnpm --filter web dev` in `apps/web` to start the site locally.
+
 ## Developer Notes
 - Do not modify files under `packages/webcrack/src/deobfuscate`.
 - UI changes should reside in `apps/web/src` without altering deobfuscation logic.

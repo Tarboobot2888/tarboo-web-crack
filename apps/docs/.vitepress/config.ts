@@ -1,3 +1,1 @@
-export default {
-  srcDir: './src'
-}
+export default {}

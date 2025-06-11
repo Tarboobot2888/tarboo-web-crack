@@ -10,6 +10,8 @@ const Navbar = () => {
         <Link href="/changelog" className="hover:text-primary">Changelog</Link>
         <Link href="/about" className="hover:text-primary">About</Link>
         <Link href="/contact" className="hover:text-primary">Contact</Link>
+        <Link href="/history" className="hover:text-primary">History</Link>
+        <Link href="/privacy" className="hover:text-primary">Privacy</Link>
       </div>
     </nav>
   );

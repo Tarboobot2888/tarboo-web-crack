@@ -2,12 +2,19 @@
   "name": "web",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "build": "rm -rf dist && cp -r ../playground/dist dist && cp -r ../docs/dist/docs dist"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "docs": "workspace:*",
-    "playground": "workspace:*"
+    "next": "14.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.4.4",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.17",
+    "framer-motion": "^11.0.0"
   }
 }

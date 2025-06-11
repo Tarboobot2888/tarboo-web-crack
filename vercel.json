@@ -1,8 +1,5 @@
 {
-  "projects": [
-    {
-      "src": "apps/web",
-      "use": "@vercel/next"
-    }
-  ]
+  "buildCommand": "pnpm --filter docs build",
+  "outputDirectory": "apps/docs/.vitepress/dist",
+  "framework": "vitepress"
 }

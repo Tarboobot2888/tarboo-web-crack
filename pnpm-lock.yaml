@@ -40,18 +40,9 @@ importers:
         version: 3.1.1(@types/debug@4.1.12)(@types/node@22.13.16)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.4.3)
 
   apps/docs:
-    devDependencies:
-      '@webcrack/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/config-eslint
-      '@webcrack/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/config-typescript
-      typescript:
-        specifier: ^5.8.2
-        version: 5.8.2
+    dependencies:
       vitepress:
-        specifier: 1.6.3
+        specifier: ^1.6.3
         version: 1.6.3(@algolia/client-search@5.23.0)(@types/node@22.13.16)(lightningcss@1.29.2)(postcss@8.5.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(search-insights@2.14.0)(typescript@5.8.2)
 
   apps/playground:

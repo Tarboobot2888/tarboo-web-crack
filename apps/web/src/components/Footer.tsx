@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-secondary text-muted py-4 text-center mt-auto">
-      © {new Date().getFullYear()} TARBOO
+      © {new Date().getFullYear()} TARBOO Deobfuscate JS
     </footer>
   );
 };

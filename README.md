@@ -56,3 +56,8 @@ console.log(result.code);
 console.log(result.bundle);
 await result.save('output-dir');
 ```
+
+## Developer Notes
+- Do not modify files under `packages/webcrack/src/deobfuscate`.
+- UI changes should reside in `apps/web/src` without altering deobfuscation logic.
+

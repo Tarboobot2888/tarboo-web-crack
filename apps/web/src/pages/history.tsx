@@ -11,14 +11,14 @@ const History = () => {
 
   return (
     <Layout>
-      <h1 className="text-2xl font-bold mb-4">History</h1>
+      <h1 className="text-3xl font-bold mb-4 text-green-400">History</h1>
       <ul className="space-y-2">
         {items.map((entry, i) => (
-          <li key={i} className="bg-secondary p-2 rounded break-all">
+          <li key={i} className="bg-gray-800 p-2 rounded break-all text-gray-200">
             {entry}
           </li>
         ))}
-        {items.length === 0 && <li className="text-muted">No history yet.</li>}
+        {items.length === 0 && <li className="text-gray-400">No history yet.</li>}
       </ul>
     </Layout>
   );

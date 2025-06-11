@@ -10,7 +10,7 @@ overrides:
 
 patchedDependencies:
   vite-plugin-monaco-editor@1.1.0:
-    hash: ml6vuvpbq2picjecjfyjy32u4e
+    hash: b97b56f2116debef5d0c05abbbf1b4ad161bf6b451dade2421ca5b80173cb4f6
     path: patches/vite-plugin-monaco-editor@1.1.0.patch
 
 importers:
@@ -40,18 +40,9 @@ importers:
         version: 3.1.1(@types/debug@4.1.12)(@types/node@22.13.16)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.4.3)
 
   apps/docs:
-    devDependencies:
-      '@webcrack/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/config-eslint
-      '@webcrack/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/config-typescript
-      typescript:
-        specifier: ^5.8.2
-        version: 5.8.2
+    dependencies:
       vitepress:
-        specifier: 1.6.3
+        specifier: ^1.6.3
         version: 1.6.3(@algolia/client-search@5.23.0)(@types/node@22.13.16)(lightningcss@1.29.2)(postcss@8.5.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(search-insights@2.14.0)(typescript@5.8.2)
 
   apps/playground:
@@ -113,7 +104,7 @@ importers:
         version: 6.2.4(@types/node@22.13.16)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.4.3)
       vite-plugin-monaco-editor:
         specifier: ^1.1.0
-        version: 1.1.0(patch_hash=ml6vuvpbq2picjecjfyjy32u4e)(monaco-editor@0.52.2)
+        version: 1.1.0(patch_hash=b97b56f2116debef5d0c05abbbf1b4ad161bf6b451dade2421ca5b80173cb4f6)(monaco-editor@0.52.2)
       vite-plugin-node-polyfills:
         specifier: ^0.23.0
         version: 0.23.0(rollup@4.34.2)(vite@6.2.4(@types/node@22.13.16)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.4.3))
@@ -6235,7 +6226,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-monaco-editor@1.1.0(patch_hash=ml6vuvpbq2picjecjfyjy32u4e)(monaco-editor@0.52.2):
+  vite-plugin-monaco-editor@1.1.0(patch_hash=b97b56f2116debef5d0c05abbbf1b4ad161bf6b451dade2421ca5b80173cb4f6)(monaco-editor@0.52.2):
     dependencies:
       monaco-editor: 0.52.2
 
